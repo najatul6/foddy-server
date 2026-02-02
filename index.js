@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const jwt = require("jsonwebtoken");
 const port = 5000 || process.env.PORT
 app.use(express.json())
 app.get('/', (req, res) => {
